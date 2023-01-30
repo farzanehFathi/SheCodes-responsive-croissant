@@ -9,9 +9,9 @@ h1 {
 
 p {
   text-align: center;
-  padding: 20px;
   font-size: 20px;
   line-height: 24px;
+  width: 500px;
 }
 
 a {
