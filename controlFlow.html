@@ -79,6 +79,68 @@
       </li>
     </ul>
 
+    <ul>
+      <li>
+        const password = "p@ss";
+        <br />
+        <br />
+        if(password.length >= 12 && password.includes("@")){
+        <br />
+        console.log("that passwprd is mighty strong")
+        <br />
+        } else if(password.length >= 8 || password.includes("@")){
+        <br />
+        consloe.log("the password is strong enough")
+        <br />
+        } else {
+        <br />
+        console.log("password is not strong enough") }
+      </li>
+      <li>
+        console.log(!true)
+        <p class="comment">// false</p>
+        <br />
+        consloe.log(!false)
+        <p class="comment">// true</p>
+      </li>
+      <li>
+        <p class="comment">Break / Continue</p>
+        <br />
+        const scores = [50, 15, 0, 30, 100, 20, 10];
+        <br />
+        for(let i=0; i< score.length; i++){
+        <br />
+        if(score[i] === 0) {continue;}
+        <br />
+        console.log("your score is ", score[i]);
+        <br />
+        if (score[i]===100) {
+        <br />
+        console.log("congrats, you got the top score!")
+        <br />
+        break; }
+        <br />
+        }
+      </li>
+      <li>
+        <p class="comment">Switch Statements</p>
+        <br />
+        const grade = "D"
+        <br />
+        switch(grade){
+        <br />
+        case "A": console.log("You gat an A!"); break;
+        <br />
+        case "B": console.log("You gat a B!"); break;
+        <br />
+        case "C": console.log("You gat a C!");break;
+        <br />
+        case "D": console.log("You gat a D!");break;
+        <br />
+        default: consloe.log("not a valid grade") }
+      </li>
+    </ul>
+
     <script src="/src/controlFlow.js"></script>
   </body>
 </html>

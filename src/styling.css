@@ -44,6 +44,7 @@ ul {
 li {
   color: navy;
   width: 45%;
+  padding-bottom: 15px;
 }
 
 .comment {
