@@ -9,36 +9,213 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styling.css" />
-    <title>🥐 Corissant</title>
+    <title>Modern JS</title>
   </head>
   <body>
-    <h1 id="page_title">Order Your Favorite Croissant Online🥐</h1>
+    <center>
+      <a href="/">Homepage</a>
+      <a href="/controlFlow.html">Control Flow</a>
+      <a href="/functions.html">Functions</a>
+      <a href="/objects.html">Objects</a>
+      <a href="/document.html">Documnet</a>
+    </center>
+    <h1 id="page_title">Learn Modern JS 👩‍💻</h1>
     <center>
       <p>
-        A croissant is a buttery, flaky, Austrian viennoiserie pastry inspired
-        by the shape of the Austrian kipferl but using the French yeast-leavened
-        laminated dough.
+        JavaScript is a scripting language that enables you to create
+        dynamically updating content, control multimedia, animate images, and
+        pretty much ...
       </p>
     </center>
 
-    <center>
-      <a href="/">Homepage</a>
-      <a href="/photo.html">Photo</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/functions.html">Functions</a>
-      <a href="/objects.html">Objects</a>
-    </center>
+    <h2>Syntax Basics and Types</h2>
 
-    <center>
-<h2>The Dom</h2>
-    <div>
-      
-      <p class="hello">Hello World</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem consequuntur illum labore est quisquam.</p>
-    </div>
-    </center>
+    <ul>
+      <li>alert('hello, world');</li>
+      <li>
+        let age = 25;
+        <p class="comment">// Define a variable</p>
+      </li>
+      <li>
+        age = 30;
+        <p class="comment">// Update the value</p>
+      </li>
+      <li>
+        const points = 100;
+        <p class="comment">// Unchangable variable</p>
+      </li>
+      <li>let email = "farzaneh.fth@gmail.com"</li>
+      <li>
+        a = email[3];
+        <p class="comment">//z</p>
+      </li>
+      <li>
+        b = email.indexOf("@")
+        <p class="comment">//12</p>
+      </li>
+      <li>
+        c = email.toUpperCase()
+        <p class="comment">// method</p>
+      </li>
+      <li>d = email.toLowerCase()</li>
+      <li>e = email.lastIndexOf("n")</li>
+      <li>
+        f = email.slice(0,10)"
+        <p class="comment">// slices from 0 to 10</p>
+      </li>
+      <li>
+        g = email.sbstr(4,10)
+        <p class="comment">// slices from 4 to 14</p>
+      </li>
+      <li>h = email.replace("n", "w")</li>
+      <li>
+        i = email.includes("@")
+        <p class="comment">// true</p>
+      </li>
+    </ul>
 
-    <!-- <script src="src/sandbox.js"></script> -->
-    <!-- <script src="src/controlFlow.js"></script> -->
-   <script src="/src/document.js"></script>
+    <ul>
+      <li>let ninjas = ["shaun", "ryu", "chun-li"];</li>
+      <li>ninjas[1] = "ken"</li>
+      <li>let ages = [20,25,30,35]</li>
+      <li>a = ninjas.join(", ")</li>
+      <li>b = ninjas.contact (['ken','crystal'])</li>
+      <li>
+        c = ninjas.push('ken)
+        <p class="comment">
+          // alters the original array, returns the length of the new array
+        </p>
+      </li>
+      <li>
+        d = ninjas.pop()
+        <p class="comment">
+          // removes and returns the last item, changes the original array
+        </p>
+      </li>
+      <li>
+        e = ninjas.includes("bowser")
+        <p class="comment">// false</p>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        undefined:
+        <p class="comment">
+          it's unintential lack of value that browser automatically returns
+        </p>
+      </li>
+      <li>
+        null
+        <p class="comment">we intentionally set the value as null</p>
+      </li>
+    </ul>
+
+    <ul>
+      <li>let age = 25;</li>
+      <li>
+        age == 25;
+        <p class="comment">// true</p>
+      </li>
+      <li>
+        age == 30
+        <p class="comment">// false</p>
+      </li>
+      <li>
+        age != 30
+        <p class="comment">// true</p>
+      </li>
+    </ul>
+
+    <ul>
+      <li>let name = "shaun";</li>
+      <li>
+        name == "shaun";
+        <p class="comment">// true</p>
+      </li>
+      <li>
+        name == "Shaun";
+        <p class="comment">// false</p>
+      </li>
+
+      <li>
+        name > "crystal";
+        <p class="comment">// true</p>
+      </li>
+      <li>
+        name > "Shaun"
+        <p class="comment">// true</p>
+      </li>
+      <li>
+        name > "Crystal"
+        <p class="comment">// true</p>
+      </li>
+    </ul>
+
+    <ul>
+      <li>let age = 25;</li>
+      <li>
+        age == "25"
+        <p class="comment">// true</p>
+      </li>
+      <li>
+        age != "25"
+        <p class="comment">// false</p>
+      </li>
+      <li>
+        age === "25"
+        <p class="comment">// false</p>
+      </li>
+      <li>
+        age !== "25"
+        <p class="comment">// true</p>
+      </li>
+    </ul>
+
+    <ul>
+      <li>let score = "100"</li>
+      <li>
+        a = score + 1
+        <p class="comment">// "1001"</p>
+      </li>
+      <li>
+        b = Number(score)
+        <p class="comment">// 101</p>
+      </li>
+      <li>
+        c = typeOf score
+        <p class="comment">// string</p>
+      </li>
+      <li>
+        d = Number("hello")
+        <p class="comment">// NaN</p>
+      </li>
+      <li>
+        e = String(50)
+        <p class="comment">// "50"</p>
+      </li>
+      <li>
+        f = Boolean(100)
+        <p class="comment">// true</p>
+      </li>
+      <li>
+        g = Boolean(0)
+        <p class="comment">// false</p>
+      </li>
+      <li>
+        g = Boolean(-1)
+        <p class="comment">// true</p>
+      </li>
+      <li>
+        h = Boolean("0")
+        <p class="comment">// true</p>
+      </li>
+      <li>
+        i = Boolean("")
+        <p class="comment">// false</p>
+      </li>
+    </ul>
+
+    <script src="src/sandbox.js"></script>
+  </body>
 </html>

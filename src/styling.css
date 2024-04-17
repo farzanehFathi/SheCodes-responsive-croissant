@@ -1,9 +1,11 @@
 body {
-  background-color: blanchedalmond;
+  background-color: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  color: chocolate;
+h1,
+h2 {
+  color: crimson;
   text-align: center;
 }
 
@@ -15,9 +17,11 @@ p {
 }
 
 a {
+  text-decoration: none;
   line-height: 4;
   padding-right: 40px;
-  color: chocolate;
+  color: crimson;
+  font-weight: 700;
 }
 
 img {
@@ -25,4 +29,25 @@ img {
   display: block;
   margin: 0 auto;
   border-radius: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+li {
+  color: navy;
+  width: 45%;
+}
+
+.comment {
+  color: #bbb;
+  display: inline;
+  font-size: small;
 }

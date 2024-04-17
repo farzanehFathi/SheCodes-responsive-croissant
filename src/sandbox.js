@@ -69,7 +69,7 @@ console.log(ninjas.length);
 
 // array methods
 
-console.log(ninjas.join("-"));
+console.log(ninjas.join(", "));
 
 console.log(ninjas.indexOf("chan-li"));
 
